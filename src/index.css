@@ -1,2 +1,2 @@
-.day-container {display: flex; width: 100%; justify-content: center; padding-top: 5px}
+.day-container {display: flex; width: 100%; justify-content: center; padding-top: 5px; box-sizing: border-box;}
 
