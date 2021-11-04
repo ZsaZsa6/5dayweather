@@ -1,14 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { Days } from './Days';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header>
        
         <h1>5 day weather</h1>
         
       </header>
+      <Days/>
     </div>
   );
 }
