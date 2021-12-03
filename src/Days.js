@@ -1,19 +1,18 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
-import { fetchWeather } from './api/fetchWeather';
+
 import './App.css';
 
 const Days = () => {
-    const [query, setQuery] = useState('');
-    const [weather, setWeather] = useState({});
-    
-    const search = async (e) => {
-        if(e.key === 'Enter') {
-            const data = await fetchWeather(query);
+    axios.get('https://api.openweathermap.org/data/2.5/onecall?lat=34.720902&lon=-96.919178&exclude=current,hourly,minutely,alerts&appid=APP_ID', 
+    { params: {
+        APP_ID: 'ba1e83d61cbe3a4871a33ffc3893e95a'
+    }
+    })
 
-            setWeather(data);
-            setQuery('');
-        }
+    
+   
     }
 
     return (
