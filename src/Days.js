@@ -2,11 +2,12 @@ import axios from 'axios';
 import React, {useEffect, useState} from 'react';
 
 import './App.css';
+export default function Days(){
 const URL = 'https://api.openweathermap.org/data/2.5/onecall?';
 const API_KEY = 'ba1e83d61cbe3a4871a33ffc3893e95a';
 
+const [weather, setWeather] = useState([]);
 
-const [weather, setWeather] = useState([])
 const getDays = () => {
      axios.get(URL, 
         {params: {
@@ -24,7 +25,7 @@ const getDays = () => {
         
         }
     
-        useEffect(() => getDays(), [])
+    useEffect(() => getDays(), [])
 
     
     return (
@@ -37,5 +38,4 @@ const getDays = () => {
         </div>
     );
 
-
-export default getDays
+    }
