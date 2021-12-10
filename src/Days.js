@@ -31,11 +31,17 @@ const getDays = () => {
     return (
         <div className="main-container">
             <div className="min-temp">
-                {weather.min}
+            
+                    {weather[4]}
+                    
+                    {weather.max}
+
+                   
+            </div>
             </div>
         
            
-        </div>
+      
     );
 
     }
