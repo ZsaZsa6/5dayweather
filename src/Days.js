@@ -29,9 +29,9 @@ const getDays = () => {
 
     
     return (
-        <div >
-            <div>
-
+        <div className="main-container">
+            <div className="min-temp">
+                {weather.min}
             </div>
         
            
