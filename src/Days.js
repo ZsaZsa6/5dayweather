@@ -19,7 +19,7 @@ const getDays = () => {
         })
        .then((response) => {
            console.log(response);
-           const weather = response.data;
+           const weather = response.data.daily[0].temp;
            setWeather(weather);
        })
         
@@ -32,7 +32,7 @@ const getDays = () => {
         <div className="main-container">
             <div className="min-temp">
             
-                    {weather.}
+                    {weather.min}
                     
                     {weather.max}
 
