@@ -32,7 +32,7 @@ const getDays = () => {
         <div className="main-container">
             <div className="min-temp">
             
-                    {weather[4]}
+                    {weather.}
                     
                     {weather.max}
 
