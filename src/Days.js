@@ -19,7 +19,7 @@ const getDays = () => {
         })
        .then((response) => {
            console.log(response);
-           const weather = response.data.daily[0].temp;
+           const weather = response.data.daily
            setWeather(weather);
        })
         
@@ -27,7 +27,7 @@ const getDays = () => {
     
     useEffect(() => getDays(), [])
 
-    
+    const days = weather.map {}
     return (
         <div className="main-container">
             <div className="min-temp">
