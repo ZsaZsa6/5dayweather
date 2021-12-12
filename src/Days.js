@@ -24,12 +24,14 @@ const getDays = () => {
        })
         
         }
+        const days = weather.map((daily) => daily[]
+        
     
     useEffect(() => getDays(), [])
 
-    const days = weather.map {}
     return (
         <div className="main-container">
+          
             <div className="min-temp">
             
                     {weather.min}
